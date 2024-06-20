@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+  </head>
+  <body>
+    <header>
+      <app-bar></app-bar>
+    </header>
+
+    <main>
+      <note-form class="animate-on-scroll"></note-form>
+
+      <section id="unArchivedNoteContainer" class="animate-on-scroll">
+        <h2 class="section-title animate-on-scroll">Unarchived Notes</h2>
+        <loading-indicator></loading-indicator>
+        <note-list></note-list>
+      </section>
+
+      <section id="archiveNoteContainer" class="animate-on-scroll">
+        <h2 class="section-title animate-on-scroll">Archived Notes</h2>
+        <loading-indicator></loading-indicator>
+        <note-list></note-list>
+      </section>
+    </main>
+
+    <footer>
+      <footer-bar></footer-bar>
+    </footer>
+  </body>
+</html>
